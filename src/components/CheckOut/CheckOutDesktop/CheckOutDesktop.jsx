@@ -1,0 +1,65 @@
+import { useObserver } from "mobx-react-lite";
+import shoesStore from "../../../Store/ShoesStore";
+
+const CheckOutDesktop = () => {
+  return useObserver(() => (
+    <>
+      <tbody>
+        {shoesStore.bag.map((shoes, index) => {
+          return (
+            <tr key={index}>
+              <td>
+                <div onClick={() => shoesStore.removeBag(index)}>
+                  <img src="../src/assets/icons/off_close.png" alt="" />
+                </div>
+              </td>
+              <td>
+                <div className="checkout-product">
+                  <div className="checkout-product-img">
+                    <img
+                      src={`../src/assets/shoes-pict/${shoes.name}.png`}
+                      alt={`${shoes.name}.png`}
+                    />
+                  </div>
+                  <div className="checkout-product-desc">
+                    <p>{shoes.name}</p>
+                    <div className="product-information">
+                      <p>Size: {shoes.sizes}</p>
+                      <p>
+                        Color
+                        <div
+                          className="product-info-color"
+                          style={{
+                            backgroundColor: `${shoes.colors.color_hash}`,
+                          }}
+                        ></div>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>${shoes.price}</p>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  placeholder="0"
+                  value={shoes.quantity}
+                  onChange={(event) => {
+                    shoesStore.setQuantity(index, event.target.value);
+                  }}
+                />
+              </td>
+              <td>
+                <p>${shoes.price * shoes.quantity}</p>
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </>
+  ));
+};
+
+export default CheckOutDesktop;

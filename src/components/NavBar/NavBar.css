@@ -1,0 +1,91 @@
+#shoes-menu {
+  display: block;
+  padding: 0 100px;
+}
+
+.shoes-menu-container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.nike-logo {
+  width: 58px;
+  height: 20px;
+  position: absolute;
+  left: 100px;
+}
+
+.shoes-category {
+  width: 419px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoes-category.second {
+  display: none;
+}
+
+.shoes-category div,
+.shoes-category a {
+  cursor: pointer;
+  color: #131212;
+}
+
+.shoes-category div::after,
+.shoes-category a::after {
+  padding-bottom: 11px;
+  content: "";
+  display: block;
+}
+
+.shoes-menu-container .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78px;
+  position: absolute;
+  right: 100px;
+}
+
+.shopping-bag,
+.account-circle {
+  width: 24px;
+  height: 25.39px;
+  display: block;
+  padding: auto;
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /*  SHOES MENU SECTION */
+  #shoesCategory {
+    padding-bottom: 100px;
+  }
+
+  .product-container {
+    padding: 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nike-logo {
+    left: 5.5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nike-logo img {
+    width: 75%;
+    height: 75%;
+  }
+}
