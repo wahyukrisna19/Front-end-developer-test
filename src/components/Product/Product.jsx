@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import shoesStore from "../../Store/ShoesStore";
+import { BASE_URL } from "../../Store/constant";
 
 const Product = ({ name, price, category, shoesIndex }) => {
   const handleSelect = (index) => {
@@ -11,7 +12,7 @@ const Product = ({ name, price, category, shoesIndex }) => {
       <div className="product" onClick={() => handleSelect(shoesIndex)}>
         <div className="container-img">
           <img
-            src={`../src/assets/shoes-pict/${name}.png`}
+            src={`.${BASE_URL}/assets/shoes-pict/${name}.png`}
             alt={name + ".png"}
           />
         </div>

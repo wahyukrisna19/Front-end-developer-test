@@ -1,5 +1,6 @@
 import { useObserver } from "mobx-react-lite";
 import shoesStore from "../../../Store/ShoesStore";
+import { BASE_URL } from "../../../Store/constant";
 
 const CheckOutDesktop = () => {
   return useObserver(() => (
@@ -10,14 +11,17 @@ const CheckOutDesktop = () => {
             <tr key={index}>
               <td>
                 <div onClick={() => shoesStore.removeBag(index)}>
-                  <img src="../src/assets/icons/off_close.png" alt="" />
+                  <img
+                    src={`.${BASE_URL}/assets/shoes-pict/off_close.png`}
+                    alt=""
+                  />
                 </div>
               </td>
               <td>
                 <div className="checkout-product">
                   <div className="checkout-product-img">
                     <img
-                      src={`../src/assets/shoes-pict/${shoes.name}.png`}
+                      src={`.${BASE_URL}/assets/shoes-pict/${shoes.name}.png`}
                       alt={`${shoes.name}.png`}
                     />
                   </div>
