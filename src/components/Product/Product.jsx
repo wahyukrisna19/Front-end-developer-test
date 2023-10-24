@@ -12,7 +12,7 @@ const Product = ({ name, price, category, shoesIndex }) => {
       <div className="product" onClick={() => handleSelect(shoesIndex)}>
         <div className="container-img">
           <img
-            src={`.${BASE_URL}assets/shoes-pict/${name}.png`}
+            src={`.${BASE_URL}/assets/shoes-pict/${name}.png`}
             alt={name + ".png"}
           />
         </div>
