@@ -4,28 +4,22 @@ import NavBar from "./components/NavBar/NavBar";
 import ProductsListing from "./pages/ProductsListing";
 import ProductDetail from "./pages/ProductDetail";
 import Bag from "./pages/Bag";
+import { useObserver } from "mobx-react-lite";
 
 function App() {
-  return (
+  return useObserver(() => (
     <>
       <BrowserRouter>
         <TopMenu />
         <NavBar />
         <Routes>
-          <Route
-            index
-            path="/Front-end-developer-test/"
-            element={<ProductsListing />}
-          />
-          <Route
-            path="/Front-end-developer-test/productdetail"
-            element={<ProductDetail />}
-          ></Route>
-          <Route path="/Front-end-developer-test/bag" element={<Bag />}></Route>
+          <Route index path="/" element={<ProductsListing />} />
+          <Route path="/productdetail" element={<ProductDetail />}></Route>
+          <Route path="/bag" element={<Bag />}></Route>
         </Routes>
       </BrowserRouter>
     </>
-  );
+  ));
 }
 
 export default App;
