@@ -3,6 +3,7 @@ import { useObserver } from "mobx-react";
 import Notification from "../Notification/Notification";
 import "./NavBar.css";
 import { Link, useNavigate } from "react-router-dom";
+import { BASE_URL } from "../../Store/constant";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ const NavBar = () => {
         >
           <Link to={"/"}>
             <img
-              src="../src/assets/icons/Logo_NIKE 1.png"
+              src={`.${BASE_URL}/assets/icons/Logo_NIKE 1.png`}
               alt="Logo_NIKE 1.png"
             />
           </Link>
@@ -88,7 +89,7 @@ const NavBar = () => {
           <div className="shopping-bag">
             <Link to="/bag">
               <img
-                src="../src/assets/icons/shopping-bag-line 1.png"
+                src={`.${BASE_URL}/assets/icons/shopping-bag-line-1.png`}
                 alt="shopping-bag-line 1"
               />
               <Notification />
@@ -97,7 +98,7 @@ const NavBar = () => {
 
           <div className="account-circle">
             <img
-              src="../src/assets/icons/account-circle-line 1.png"
+              src={`.${BASE_URL}/assets/icons/account-circle-line-1.png`}
               alt="account-circle-line 1.png"
             />
           </div>
