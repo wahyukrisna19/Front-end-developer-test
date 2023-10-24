@@ -12,7 +12,7 @@ function App() {
         <TopMenu />
         <NavBar />
         <Routes>
-          <Route index element={<ProductsListing />} />
+          <Route index path="/" element={<ProductsListing />} />
           <Route path="/productdetail" element={<ProductDetail />}></Route>
           <Route path="/bag" element={<Bag />}></Route>
         </Routes>
