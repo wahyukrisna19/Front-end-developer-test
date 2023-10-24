@@ -58,6 +58,7 @@
   font-weight: 500;
   line-height: normal;
   color: #131212;
+  text-transform: uppercase;
 }
 
 .container-info div p:nth-child(2) {
