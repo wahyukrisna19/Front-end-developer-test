@@ -12,9 +12,16 @@ function App() {
         <TopMenu />
         <NavBar />
         <Routes>
-          <Route index path="/" element={<ProductsListing />} />
-          <Route path="/productdetail" element={<ProductDetail />}></Route>
-          <Route path="/bag" element={<Bag />}></Route>
+          <Route
+            index
+            path="/Front-end-developer-test/"
+            element={<ProductsListing />}
+          />
+          <Route
+            path="/Front-end-developer-test/productdetail"
+            element={<ProductDetail />}
+          ></Route>
+          <Route path="/Front-end-developer-test/bag" element={<Bag />}></Route>
         </Routes>
       </BrowserRouter>
     </>
