@@ -16,7 +16,7 @@ const CheckOutMobile = () => {
           </div>
           <div className="product-img">
             <img
-              src={`../src/assets/shoes-pict/${shoes.name}.png`}
+              src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
               alt={`${shoes.name}.png`}
             />
           </div>
