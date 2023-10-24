@@ -11,10 +11,7 @@ const CheckOutDesktop = () => {
             <tr key={index}>
               <td>
                 <div onClick={() => shoesStore.removeBag(index)}>
-                  <img
-                    src={`.${BASE_URL}/assets/shoes-pict/off_close.png`}
-                    alt=""
-                  />
+                  <img src={`.${BASE_URL}/assets/icons/off_close.png`} alt="" />
                 </div>
               </td>
               <td>

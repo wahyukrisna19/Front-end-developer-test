@@ -29,8 +29,8 @@ const NavBar = () => {
         >
           <Link to={"/"}>
             <img
-              src={`.${BASE_URL}/assets/icons/Logo_NIKE 1.png`}
-              alt="Logo_NIKE 1.png"
+              src={`.${BASE_URL}/assets/icons/Logo_NIKE_1.png`}
+              alt="Logo_NIKE_1.png"
             />
           </Link>
         </div>

@@ -1,4 +1,5 @@
 import "./TopMenu.css";
+import { BASE_URL } from "../../Store/constant";
 
 export default function TopMenu() {
   return (
@@ -12,7 +13,7 @@ export default function TopMenu() {
       <div className="group8">
         <div className="free-delivery">
           <img
-            src="../src/assets/icons/free-delivery.png"
+            src={`.${BASE_URL}/assets/icons/free-delivery.png`}
             alt="free-delivery.png"
           />
         </div>
