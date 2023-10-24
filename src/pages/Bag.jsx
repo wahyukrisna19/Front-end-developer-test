@@ -4,6 +4,8 @@ import CheckOutMobile from "../components/CheckOut/CheckOutMobile/CheckOutMobile
 import "./Styles/bag.css";
 import Notification from "../components/Notification/Notification";
 import { useObserver } from "mobx-react-lite";
+import { BASE_URL } from "../Store/constant";
+
 const Bag = () => {
   console.log(shoesStore.bag);
   return useObserver(() => (
@@ -13,7 +15,7 @@ const Bag = () => {
           <p>Your Bag</p>
           <div className="shopping-bag">
             <img
-              src="../src/assets/icons/shopping-bag-line 1.png"
+              src={`.${BASE_URL}/assets/icons/shopping-bag-line-1.png`}
               alt="shopping-bag-line 1"
             />
             <Notification />

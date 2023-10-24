@@ -1,7 +1,7 @@
 import { useState } from "react";
 import shoesStore from "../Store/ShoesStore";
 import "./Styles/productDetail.css";
-
+import { BASE_URL } from "../Store/constant";
 import { useNavigate } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 
@@ -27,26 +27,26 @@ const ProductsDetail = () => {
           <div className="detail-img">
             <div className="main-img">
               <img
-                src={`../src/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
                 alt={`${shoesStore.selectedShoes.name}.png`}
               />
             </div>
 
             <div className="desc-img">
               <img
-                src={`../src/assets/shoes-pict/${shoesStore.selectedShoes.name}-1.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-1.png`}
                 alt={`${shoesStore.selectedShoes.name}-1.png`}
               ></img>
               <img
-                src={`../src/assets/shoes-pict/${shoesStore.selectedShoes.name}-2.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-2.png`}
                 alt={`${shoesStore.selectedShoes.name}-2.png`}
               ></img>
               <img
-                src={`../src/assets/shoes-pict/${shoesStore.selectedShoes.name}-3.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-3.png`}
                 alt={`${shoesStore.selectedShoes.name}-3.png`}
               ></img>
               <img
-                src={`../src/assets/shoes-pict/${shoesStore.selectedShoes.name}-4.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-4.png`}
                 alt={`${shoesStore.selectedShoes.name}-4.png`}
               ></img>
             </div>
