@@ -16,7 +16,7 @@ const CheckOutMobile = () => {
           </div>
           <div className="product-img">
             <img
-              src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
+              src={`.${BASE_URL}/assets/shoes-pict/${shoes.name}.png`}
               alt={`${shoes.name}.png`}
             />
           </div>
@@ -24,15 +24,13 @@ const CheckOutMobile = () => {
             <p>{shoes.name}</p>
             <div className="product-information">
               <p>Size: {shoes.sizes}</p>
-              <p>
-                Color
-                <div
-                  className="product-info-color"
-                  style={{
-                    backgroundColor: `${shoes.colors.color_hash}`,
-                  }}
-                ></div>
-              </p>
+              <p>Color</p>
+              <div
+                className="product-info-color"
+                style={{
+                  backgroundColor: `${shoes.colors.color_hash}`,
+                }}
+              ></div>
             </div>
             <div className="price">
               <p>${shoes.price}</p>

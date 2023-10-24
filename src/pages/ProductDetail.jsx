@@ -19,7 +19,7 @@ const ProductsDetail = () => {
     shoesStore.addBag(selectShoes);
     navigate("/bag");
   };
-  console.log(initialValue);
+
   return useObserver(() => (
     <>
       <section id="shoes-detail">
@@ -34,19 +34,19 @@ const ProductsDetail = () => {
 
             <div className="desc-img">
               <img
-                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-1.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
                 alt={`${shoesStore.selectedShoes.name}-1.png`}
               ></img>
               <img
-                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-2.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
                 alt={`${shoesStore.selectedShoes.name}-2.png`}
               ></img>
               <img
-                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-3.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
                 alt={`${shoesStore.selectedShoes.name}-3.png`}
               ></img>
               <img
-                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}-4.png`}
+                src={`.${BASE_URL}/assets/shoes-pict/${shoesStore.selectedShoes.name}.png`}
                 alt={`${shoesStore.selectedShoes.name}-4.png`}
               ></img>
             </div>

@@ -78,7 +78,7 @@ const NavBar = () => {
         </div>
         <div className="shoes-category second">
           <select name="" id="" onChange={handleChangeMenu}>
-            <option value={"newRelease"}>New Release</option>
+            <option value={"newRelease"}>New Releases</option>
             <option value={"men"}>Men</option>
             <option value={"women"}>Women</option>
             <option value={"kids"}>Kids</option>

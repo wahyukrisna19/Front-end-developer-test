@@ -7,7 +7,6 @@ import { useObserver } from "mobx-react-lite";
 import { BASE_URL } from "../Store/constant";
 
 const Bag = () => {
-  console.log(shoesStore.bag);
   return useObserver(() => (
     <>
       <section className="your-bag-section">
@@ -23,15 +22,19 @@ const Bag = () => {
         </div>
         <div className="checkout-container">
           <table className="checkout-table">
-            <tr className="table-header">
-              <td></td>
-              <td>Product</td>
-              <td>Price</td>
-              <td>Quantity</td>
-              <td>Total</td>
-            </tr>
-            <br></br>
-            <CheckOutDesktop />
+            <thead>
+              <tr className="table-header">
+                <td></td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="space-table"></tr>
+              <CheckOutDesktop />
+            </tbody>
           </table>
           <ul className="checkout-list">
             <CheckOutMobile />

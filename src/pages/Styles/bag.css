@@ -85,6 +85,10 @@ tbody {
   height: 150px;
 }
 
+tbody .space-table {
+  height: 20px;
+}
+
 .checkout-product {
   display: flex;
   justify-content: left;
@@ -264,6 +268,8 @@ tbody td:nth-child(4) input {
 
   .checkout-list .product-information {
     margin-top: 5px;
+    justify-content: left;
+    gap: 15px;
   }
 
   .checkout-list .product-information p {
