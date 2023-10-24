@@ -65,7 +65,7 @@ const ProductsDetail = () => {
                 className="play-video-button"
               >
                 <img
-                  src="../src/assets/icons/Group 20.png"
+                  src={`.${BASE_URL}/assets/icons/Group 20.png`}
                   alt="play-video-button"
                 />
               </a>
@@ -118,7 +118,7 @@ const ProductsDetail = () => {
         <div className="group8">
           <div className="free-delivery">
             <img
-              src="../src/assets/icons/free-delivery.png"
+              src={`.${BASE_URL}/assets/icons/free-delivery.png`}
               alt="free-delivery.png"
             />
           </div>
@@ -144,7 +144,7 @@ const ProductsDetail = () => {
             <p>ADD TO BAG — {`$${shoesStore.selectedShoes.price}`} </p>
             <div className="arrow-icon">
               <img
-                src="../src/assets/icons/small_long_right.png"
+                src={`.${BASE_URL}/assets/icons/small_long_right.png`}
                 alt="right-arrow.png"
               />
             </div>

@@ -51,7 +51,7 @@ const Bag = () => {
             <p>PAY NOW</p>
             <div className="arrow-icon">
               <img
-                src="../src/assets/icons/small_long_right.png"
+                src={`.${BASE_URL}/assets/icons/small_long_right.png`}
                 alt="right-arrow.png"
               />
             </div>

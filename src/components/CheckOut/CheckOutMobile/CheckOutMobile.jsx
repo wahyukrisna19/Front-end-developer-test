@@ -1,5 +1,6 @@
 import { useObserver } from "mobx-react-lite";
 import shoesStore from "../../../Store/ShoesStore";
+import { BASE_URL } from "../../../Store/constant";
 
 const CheckOutMobile = () => {
   return useObserver(() => (
@@ -9,7 +10,7 @@ const CheckOutMobile = () => {
           <div className="remove-bag">
             <img
               onClick={() => shoesStore.removeBag(index)}
-              src="../src/assets/icons/off_close.png"
+              src={`.${BASE_URL}/assets/icons/off_close.png`}
               alt=""
             />
           </div>
